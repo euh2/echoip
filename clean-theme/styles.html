@@ -7,7 +7,7 @@
     --primary: #4f0f97;
     --primary-contrast: #ffffff;
     --border: #e5e7eb;
-    --hover: #633598;
+    --hover: rgba(255, 255, 255, 0.2);
     --table-stripe: #fafbfc;
     --focus: #93c5fd;
     --shadow: 0 1px 2px rgba(16, 24, 40, 0.06), 0 1px 1px rgba(16, 24, 40, 0.04);
@@ -97,7 +97,7 @@
     transition: background-color 160ms ease, box-shadow 160ms ease, transform 40ms ease;
     cursor: pointer;
   }
-  .pure-button:hover, button:hover { background-color: var(--hover); }
+  .pure-button:hover, button:hover { background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)); }
   .pure-button:active, button:active { transform: translateY(0.5px); }
   .pure-button.selected, button.selected { filter: brightness(0.95); }
 
@@ -130,7 +130,7 @@
   }
   .info-table thead th { background: var(--surface); text-align: left; font-weight: 700; color: var(--text); }
   .info-table tbody tr:nth-child(even) { background: var(--table-stripe); }
-  .info-table tbody tr:hover { background: var(--hover); }
+  .info-table tbody tr:hover { background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)); }
   .info-table th[scope="row"] { background-color: var(--surface); text-align: left; color: var(--text); width: 30%; }
 
   .input-buttons { line-height: 2.6em; font-size: smaller; }
@@ -166,7 +166,7 @@
       --primary: #8c6eaf;
       --primary-contrast: #070c14;
       --border: #23272f;
-      --hover: #c298f3;
+      --hover: rgba(255, 255, 255, 0.2);
       --table-stripe: #10141a;
       --focus: #3b82f6;
     }
