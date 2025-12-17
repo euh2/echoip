@@ -9,10 +9,10 @@ RUN apk add --no-cache git && \
     go build -o echoip ./cmd/echoip
 
 # Final image: Copy base image binary and add clean-theme
-FROM alpine:latest
+FROM alpine:3.19
 
 # Install ca-certificates for HTTPS
-RUN apk add --no-cache ca-certificates
+RUN apk update && apk add --no-cache ca-certificates
 
 # Copy echoip binary from base image
 COPY --from=base /build/echoip /usr/local/bin/echoip
